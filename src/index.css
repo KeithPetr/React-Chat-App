@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------- APP CONTAINER ------------------- */
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 75vh;
+  background-color: #1B2D34;
+  color: #2C98CC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------- WELCOME COMPONENT ------------------- */
+
+.google-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
