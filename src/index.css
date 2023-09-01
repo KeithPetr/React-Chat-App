@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-color: #1b2d34;
+  min-width: 480px;
 }
 
 /* ---------------------- APP CONTAINER ------------------- */
@@ -46,4 +47,12 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+/* -------------------- MEDIA QUERIES ----------------------- */
+
+@media (min-width: 1000px) {
+  .app-container {
+    margin: 0 auto;
+  }
 }
