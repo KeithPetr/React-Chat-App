@@ -4,7 +4,8 @@ export default function Welcome() {
   return (
     <>
       <h1>Welcome to React Chat App</h1>
-      <button className="google-btn">
+      <h3>Please sign in</h3>
+      <button className="btn google-btn">
         <img src={GoogleSignIn} />
       </button>
     </>
