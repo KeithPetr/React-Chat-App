@@ -28,7 +28,6 @@ export default function NavBar() {
             src={GoogleSignIn}
             onClick={googleSignIn}
             alt="sign in with Google"
-            type="button"
           />
         </button>
       )}
