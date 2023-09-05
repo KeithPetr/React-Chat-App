@@ -10,9 +10,7 @@ function App() {
   return (
     <div className="app-container">
       <NavBar />
-      <div className="main-content">
-        {!user ? <Welcome /> : <ChatBox />}
-      </div>
+      {!user ? <Welcome /> : <ChatBox />}
     </div>
   );
 }
