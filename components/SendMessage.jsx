@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { auth, db } from "../src/firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
-export default function SendMessage() {
+export default function SendMessage({scroll}) {
   const [message, setMessage] = useState("");
 
   const sendMessage = async (event) => {
@@ -20,6 +21,7 @@ export default function SendMessage() {
         uid,
     });
     setMessage("");
+    scroll.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <form onSubmit={(event) => sendMessage(event)} className="send-message">

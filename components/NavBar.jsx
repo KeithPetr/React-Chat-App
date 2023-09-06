@@ -4,7 +4,6 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function NavBar() {
   const [user] = useAuthState(auth);
-  console.log("user", user)
 
   function signOut() {
     auth.signOut();

@@ -1,8 +1,6 @@
 import GoogleAuth from "./GoogleAuth";
-import {
-  signInWithPopup,
-  EmailAuthProvider,
-} from "firebase/auth";
+import EmailAuth from "./EmailAuth";
+
 
 export default function Welcome() {
 
@@ -14,8 +12,7 @@ export default function Welcome() {
       <p className="manual-sign-up">
         or sign up with an email address and password
       </p>
-      <input type="email" placeholder="Enter your email address"></input>
-      <input type="password" placeholder="Create a password"></input>
+      <EmailAuth />
     </div>
   );
 }

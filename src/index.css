@@ -43,21 +43,31 @@ body {
 
 /* ------------------- WELCOME COMPONENT ------------------- */
 
-.btn {
+.google-btn {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-/* ------------------- CHAT BOX COMPONENT ------------------- */
-
-.messages-wrapper {
-  padding: 30px;
-  margin-bottom: 60px;
+.email-btn {
+  margin-top: 1em;
+  background: #057ab5;
+  color: #fff;
+  border: none;
+  padding: .5em 1em;
 }
 
+/* ------------------- CHAT BOX COMPONENT ------------------- */
+
 .chat-box {
-  height: 90%;
+  height: 80%;
+  overflow-y: auto;
+  padding-top: 1em;
+}
+
+.messages-wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* ----------------------- Message Component ----------------- */
