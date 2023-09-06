@@ -30,11 +30,15 @@ export default function ChatBox() {
         (a, b) => a.createdAt - b.createdAt
       );
       setMessages(sortedMessages);
-      scroll.current.scrollIntoView({ behavior: "smooth" });
     });
     
     return () => unsubscribe;
   }, []);
+
+  useEffect(() => {
+    // Scroll to the bottom whenever the messages change
+    scroll.current.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   return (
     <main className="chat-box">
