@@ -22,12 +22,8 @@ export default function EmailAuth() {
     }
   };
 
-  const handleSignIn = async (email, password) => {
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-    } catch (error) {
-      console.error(error);
-    }
+  const handleSignIn = () => {
+    signInWithEmailAndPassword(auth, email, password);
   };
 
   const toggleMode = () => {
