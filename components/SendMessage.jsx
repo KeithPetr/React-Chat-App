@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { auth, db } from "../src/firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import ReactLogo from "../images/react-logo.png";
 
 export default function SendMessage({scroll}) {
   const [message, setMessage] = useState("");
@@ -12,11 +13,12 @@ export default function SendMessage({scroll}) {
         alert("Enter a valid message");
         return;
     }
-    const { uid, displayName, photoURL } = auth.currentUser
+    const { uid, displayName, photoURL, email } = auth.currentUser
+    const avatar = photoURL || ReactLogo
     await addDoc(collection(db, "messages"), {
         text: message,
-        name: displayName,
-        avatar: photoURL,
+        name: displayName || email,
+        avatar,
         createdAt: serverTimestamp(),
         uid,
     });

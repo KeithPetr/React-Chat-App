@@ -9,16 +9,22 @@ import { useState } from "react";
 export default function EmailAuth() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isSignIn, setisSignIn] = useState(false);
-
+  const [error, setError] = useState("");
 
   const handleSignUp = async () => {
     try {
-      const credential = EmailAuthProvider.credential(email, password);
-      await createUserWithEmailAndPassword(auth, email, password);
-      await auth.currentUser.linkWithCredential(credential);
+      if (password === confirmPassword) {
+        const credential = EmailAuthProvider.credential(email, password);
+        await createUserWithEmailAndPassword(auth, email, password);
+        await auth.currentUser.linkWithCredential(credential);
+      } else {
+        setError("Passwords do not match!");
+      }
     } catch (error) {
       console.error(error);
+      setError("An error occurred during sign-up.")
     }
   };
 
@@ -40,10 +46,19 @@ export default function EmailAuth() {
       />
       <input
         type="password"
-        placeholder="Create a password"
+        placeholder={isSignIn ? "Enter your password" : "Create a password"}
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
+      {(!isSignIn && (
+        <input
+          type="password"
+          placeholder="Confirm password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+        />
+      ))}
+      {error && <p className="error-message">{error}</p>}
       {!isSignIn ? (
         <>
           <button className="email-btn" onClick={handleSignUp}>

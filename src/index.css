@@ -55,7 +55,25 @@ body {
   color: #fff;
   border: none;
   padding: .5em 1em;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
+
+.manual-sign-up {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ----------------- EMAIL AUTH COMPONENT ------------------ */
+
+input[type="email"], input[type="password"] {
+  padding: .75em 1em;
+}
+
+input[type="password"] {
+  margin-top: 1em;
+}
+
 
 /* ------------------- CHAT BOX COMPONENT ------------------- */
 

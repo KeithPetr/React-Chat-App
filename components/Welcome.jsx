@@ -10,7 +10,7 @@ export default function Welcome() {
       <h3>Please sign in</h3>
       <GoogleAuth />
       <p className="manual-sign-up">
-        or sign up with an email address and password
+        or create an account
       </p>
       <EmailAuth />
     </div>
