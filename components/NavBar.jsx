@@ -1,4 +1,3 @@
-import GoogleAuth from "./GoogleAuth";
 import { auth } from "../src/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -12,13 +11,11 @@ export default function NavBar() {
   return (
     <nav className="nav-bar">
       <h1>React Chat App</h1>
-      {user ? (
+      {user && 
         <button onClick={signOut} className="sign-out" type="button">
           Sign Out
         </button>
-      ) : (
-        <GoogleAuth />
-      )}
+      }
     </nav>
   );
 }
