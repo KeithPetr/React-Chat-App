@@ -139,7 +139,6 @@ input[type="password"] {
   color: #1c2c4c;
   width: max-content;
   max-width: calc(100% - 50px);
-  box-shadow: -2px 2px 1px 1px #4c768d;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -148,7 +147,6 @@ input[type="password"] {
   margin-left: auto;
   border-radius: 20px 20px 0 20px;
   background-color: #fff;
-  box-shadow: -2px 2px 1px 1px #88dded;
 }
 .chat-bubble-left {
   width: 35px;
@@ -179,7 +177,7 @@ input[type="password"] {
   transform: translateX(-50%);
   width: 100%;
   max-width: 1000px;
-  padding: 20px 30px;
+  padding: 20px 15px;
   background-color: #4c768d;
   display: flex;
   margin: 0;
