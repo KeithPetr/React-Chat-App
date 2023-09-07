@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background-color: #1b2d34;
-  min-width: 480px;
+  min-width: 320px;
 }
 
 /* ---------------------- APP CONTAINER ------------------- */
@@ -16,6 +16,7 @@ body {
   color: #eeeeee;
   height: 100vh;
   margin: 0;
+  text-align: center;
 }
 
 .welcome-content {
@@ -42,6 +43,10 @@ body {
 }
 
 /* ------------------- WELCOME COMPONENT ------------------- */
+
+.welcome-content > h1 {
+  padding: 0 0.5em;
+}
 
 .google-btn {
   background: none;
