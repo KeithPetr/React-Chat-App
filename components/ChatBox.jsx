@@ -36,7 +36,6 @@ export default function ChatBox() {
   }, []);
 
   useEffect(() => {
-    // Scroll to the bottom whenever the messages change
     scroll.current.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
