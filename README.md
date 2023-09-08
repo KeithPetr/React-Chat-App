@@ -29,19 +29,22 @@ avatar and used their email address as their display name.
  [Live Demo](https://keiths-react-chat.netlify.app/)
 
 ## Project Requirements
-There were 3 main requirements for this project. The first requirement was to set up and use the authentication features available from Firebase. 
+There were 4 main requirements for this project. The first requirement was to set up and use the authentication features available from Firebase. 
 I created a Firestore database that would hold the message objects that were created when a user sent a message. I then used the methods created by 
 Firebase to query those objects so that they could be fetched and displayed according to creation dates. The second requirement was that I needed to 
 set up the React components to hold and display the messages sent by each user. I used conditional rendering to display the correct information based 
 off of the users authentication status. The third requirement was to access and use the user data that was created when a user signed in. If they did so
 with a Google account, their avatar and display name would be used to go alongside their messages. If they created an account manually, their username 
-would default to the email address they provided and their avatar would default to a React logo image.
+would default to the email address they provided and their avatar would default to a React logo image. The last requirement I had was to create an icon
+that could be displayed on mobile devices. When the user accesses the Netlify website, they can select the option to 'add to Home Screen' to add an icon
+for the app to their device.
 
 ## This project includes the following 'stretch goals':
   - Allow users to manually enter an email address
   - Allow users to create and confirm a new password on sign up
   - Create and link credentials for manually entered email addresses
   - Query the data using Firestore query method
+  - Adding a site.webmanifest file to allow a favicon to be added to the home screen of mobile devices
 
 ## Future Goals
   - Add the ability for users to create their own chat room and select the users they wish to chat with
