@@ -14,11 +14,11 @@ export default function SendMessage({scroll}) {
         return;
     }
     const { uid, displayName, photoURL, email } = auth.currentUser
-    const avatar = photoURL || ReactLogo
+    
     await addDoc(collection(db, "messages"), {
         text: message,
         name: displayName || email,
-        avatar,
+        avatar: photoURL || ReactLogo,
         createdAt: serverTimestamp(),
         uid,
     });

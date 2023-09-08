@@ -100,6 +100,14 @@ body {
   transform: scale(1.05);
 }
 
+.email-btn:focus, .sign-out:focus {
+  border: 1px solid rgb(137, 21, 21);
+}
+
+.sign-out {
+  margin: 0;
+}
+
 .manual-sign-up {
   font-weight: bold;
   font-size: 1.2rem;
