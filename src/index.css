@@ -16,7 +16,6 @@ body {
   color: #eeeeee;
   height: 100vh;
   margin: 0;
-  text-align: center;
 }
 
 .welcome-content {
@@ -25,6 +24,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 90%;
+  text-align: center;
 }
 
 /* ------------------ NAVBAR ------------------------------ */
