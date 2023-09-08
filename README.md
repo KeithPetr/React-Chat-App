@@ -22,15 +22,14 @@ avatar and used their email address as their display name.
   - Firebase
 
 ## Screenshots
-<img src="https://github.com/KeithPetr/Invoice-Creator-React/assets/91621041/8284c61a-406b-46b9-86bd-2cba29d1ded5" height="450" width="375" />
-<img src="https://github.com/KeithPetr/Invoice-Creator-React/assets/91621041/3c378ded-82b8-4b9c-8567-91173a1b72d0" height="450" width="375" />
-<img src="https://github.com/KeithPetr/Invoice-Creator-React/assets/91621041/c05bf795-c409-462d-8347-b1a799ea67e1" height="450" width="375" />
+<img src="https://github.com/KeithPetr/React-Chat-App/assets/91621041/e3bab514-5323-41de-8373-d80143d088a9" height="450" width="250" />
+<img src="https://github.com/KeithPetr/React-Chat-App/assets/91621041/e0c236a1-9c73-4d45-9d4e-ae20481bf6ac" height="450" width="250" />
 
 ## Links
- [Live Demo](https://invoice-creator-react.netlify.app/)
+ [Live Demo](https://keiths-react-chat.netlify.app/)
 
 ## Project Requirements
-There were 6 main requirements for this project. The first requirement was to set up and use the authentication features available from Firebase. 
+There were 3 main requirements for this project. The first requirement was to set up and use the authentication features available from Firebase. 
 I created a Firestore database that would hold the message objects that were created when a user sent a message. I then used the methods created by 
 Firebase to query those objects so that they could be fetched and displayed according to creation dates. The second requirement was that I needed to 
 set up the React components to hold and display the messages sent by each user. I used conditional rendering to display the correct information based 
@@ -50,4 +49,4 @@ would default to the email address they provided and their avatar would default 
   - Create a side menu component that holds a users friends they have other chat rooms with
 
 ### Resources:
-  - [Scrimba](https://scrimba.com/)
+  - [freecodecamp](https://www.freecodecamp.org/news/building-a-real-time-chat-app-with-reactjs-and-firebase/)
